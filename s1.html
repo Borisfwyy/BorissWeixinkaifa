@@ -261,19 +261,45 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8BF4;&#x660E;">&#x8BF4;&#x660E;</h1>
-<h2 id="&#x8FD9;&#x91CC;&#x662F;&#x9488;&#x5BF9;&#x521D;&#x5B66;&#x8005;&#x7684;githubapi&#x6559;&#x7A0B;&#xFF0C;&#x5C06;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x90E8;&#x5206;">&#x8FD9;&#x91CC;&#x662F;&#x9488;&#x5BF9;&#x521D;&#x5B66;&#x8005;&#x7684;GitHubAPI&#x6559;&#x7A0B;&#xFF0C;&#x5C06;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x90E8;&#x5206;</h2>
-<ul>
-<li><h2 id="&#x514D;&#x6743;&#x9650;&#x90E8;&#x5206;">&#x514D;&#x6743;&#x9650;&#x90E8;&#x5206;</h2>
-</li>
-<li><h2 id="&#x9700;&#x6743;&#x9650;&#x90E8;&#x5206;">&#x9700;&#x6743;&#x9650;&#x90E8;&#x5206;</h2>
-<ul>
-<li>&#x83B7;&#x53D6;&#x6743;&#x9650;</li>
-<li>on working &#x3002;&#x3002;&#x3002;</li>
-</ul>
-</li>
-</ul>
-<p>&#x5236;&#x4F5C; &#x738B;&#x97EC;&#x667A; 18052026 </p>
+                                <h1 id="&#x83B7;&#x53D6;&#x6743;&#x9650;">&#x83B7;&#x53D6;&#x6743;&#x9650;</h1>
+<p>&#x9996;&#x5148;&#x9700;&#x8981;&#x77E5;&#x9053;&#x90FD;&#x662F;&#xFF0C;&#x5230;&#x6B64;&#x4E3A;&#x6B62;&#x4E4B;&#x524D;&#x6240;&#x6709;&#x90FD;&#x67E5;&#x8BE2;&#x90FD;&#x662F;&#x4E0D;&#x9700;&#x8981;&#x4EFB;&#x4F55;&#x6743;&#x9650;&#x7684;&#xFF0C;&#x7ED9;&#x4E2A;&#x5730;&#x5740;&#x5C31;&#x8FD4;&#x56DE;&#x6570;&#x636E;&#xFF0C;&#x5168;&#x516C;&#x5F00;&#x3002;&#x4F46;&#x662F;&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x3001;&#x66F4;&#x65B0;&#x3001;&#x5220;&#x9664;&#x7B49;&#x5C31;&#x662F;&#x5FC5;&#x987B;&#x7528;&#x81EA;&#x5DF1;&#x7684;&#x8D26;&#x53F7;&quot;&#x767B;&#x5F55;&quot;&#x624D;&#x80FD;&#x5B9E;&#x73B0;&#x7684;&#x3002;&#x6240;&#x4EE5;&#x4E3A;&#x4E86;&#x4E0B;&#x9762;&#x7684;&#x589E;&#x5220;&#x6539;&#x505A;&#x51C6;&#x5907;&#xFF0C;&#x9700;&#x8981;&#x5148;&#x770B;&#x4E00;&#x4E0B;&#x6743;&#x9650;&#x95EE;&#x9898;&#x3002;&#x5B98;&#x7F51;&#x867D;&#x7136;&#x5199;&#x7684;&#x5F88;&#x7B80;&#x7B54;&#xFF0C;&#x4E0D;&#x8FC7;&#x5982;&#x679C;&#x4E0D;&#x719F;&#x6089;API&#x7684;&#x8BDD;&#x8FD8;&#x662F;&#x4E0D;&#x80FD;&#x9A6C;&#x4E0A;&#x5C31;&#x7406;&#x89E3;&#x3002;</p>
+<p>&#x5E38;&#x7528;&#x7684;&#x8BA4;&#x8BC1;&#x65B9;&#x6CD5;&#x6709;&#x4E09;&#x79CD;&#xFF1A;</p>
+<ol>
+<li>Basic authentication</li>
+<li>OAuth2 token,</li>
+<li>OAuth2 key/secret&#x3002;</li>
+</ol>
+<p>&#x4E09;&#x79CD;&#x65B9;&#x6CD5;&#x6548;&#x679C;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x5404;&#x6709;&#x5176;&#x7279;&#x70B9;&#x548C;&#x65B9;&#x4FBF;&#x4E4B;&#x5904;&#x3002;&#x9009;&#x54EA;&#x79CD;&#x5C31;&#x8981;&#x770B;&#x81EA;&#x5DF1;&#x54EA;&#x79CD;&#x65B9;&#x4FBF;&#x4E86;&#x3002;</p>
+<hr>
+<h2 id="&#x8BA4;&#x8BC1;&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;basic-authentication">&#x8BA4;&#x8BC1;&#x65B9;&#x6CD5;&#x4E00;&#xFF1A;Basic authentication</h2>
+<p>&#x5982;&#x679C;&#x662F;&#x7528;curl&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#xFF1A;
+<code>curl -u &quot;&#x7528;&#x6237;&#x540D;:&#x5BC6;&#x7801;&quot; https://api.github.com</code></p>
+<p>&#x5982;&#x679C;&#x662F;&#x7528;Insomnia&#x7B49;api&#x8C03;&#x8BD5;&#x5DE5;&#x5177;&#x7684;&#x8BDD;&#xFF0C;&#x76F4;&#x63A5;&#x5728;Auth&#x9009;&#x9879;&#x680F;&#x91CC;&#x9009;Basic Auth&#xFF0C;&#x7136;&#x540E;&#x586B;&#x4E0A;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;&#x5373;&#x53EF;&#x3002;</p>
+<h2 id="&#x8BA4;&#x8BC1;&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;oauth2-token">&#x8BA4;&#x8BC1;&#x65B9;&#x6CD5;&#x4E8C;&#xFF1A;OAuth2 token</h2>
+<h3 id="&#x5173;&#x4E8E;token">&#x5173;&#x4E8E;token</h3>
+<h4 id="token&#x7B80;&#x4ECB;">token&#x7B80;&#x4ECB;</h4>
+<p>&#x8FD9;&#x79CD;token&#x65B9;&#x5F0F;&#xFF0C;&#x8BF4;&#x5B9E;&#x8BDD;&#x5982;&#x679C;&#x4E0D;&#x662F;&#x64CD;&#x4F5C;&#x8FC7;API&#x6216;&#x6DF1;&#x5EA6;&#x4E86;&#x89E3;REST&#x7684;&#x8BDD;&#xFF0C;&#x662F;&#x5F88;&#x96BE;&#x7406;&#x89E3;&#x7684;&#x4E1C;&#x897F;&#x3002;&#x8BF4;&#x767D;&#x4E86;&#x5C31;&#x662F;&#x7B2C;&#x4E8C;&#x4E2A;&#x5BC6;&#x7801;&#xFF0C;&#x4F60;&#x65E2;&#x4E0D;&#x7528;&#x5230;&#x5904;&#x6CC4;&#x9732;&#x81EA;&#x5DF1;&#x7684;&#x7528;&#x6237;&#x540D;&#x5BC6;&#x7801;&#xFF0C;&#x53C8;&#x53EF;&#x4EE5;&#x4E13;&#x95E8;&#x7ED9;&#x8FD9;&#x4E2A;&quot;&#x7B2C;&#x4E8C;&#x5BC6;&#x7801;&quot;&#x8BBE;&#x7F6E;&#x4E0D;&#x540C;&#x9700;&#x8981;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x5982;&#x6709;&#x7684;&#x53EA;&#x53EF;&#x8BFB;&#x6709;&#x7684;&#x8FD8;&#x53EF;&#x4EE5;&#x5199;&#x7B49;&#x3002;&#x800C;&#x4E14;&#x8FD9;&#x4E2A;&#x201C;&#x7B2C;&#x4E8C;&#x5BC6;&#x7801;&#x201D;&#x662F;&#x65E2;&#x5305;&#x62EC;&#x7528;&#x6237;&#x540D;&#x53C8;&#x5305;&#x62EC;&#x5BC6;&#x7801;&#x529F;&#x80FD;&#x7684;&#xFF0C;&#x5168;&#x7AD9;&#x53EA;&#x6B64;&#x4E00;&#x4E2A;&#x7EDD;&#x5BF9;&#x4E0D;&#x4F1A;&#x548C;&#x522B;&#x4EBA;&#x91CD;&#x590D;&#x3002;&#x521D;&#x6B21;&#x4E4B;&#x5916;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x5F88;&#x591A;&#x4E2A;token&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7B2C;&#x4E09;&#x3001;&#x7B2C;&#x56DB;&#x3001;&#x7B2C;&#x4E94;...&#x5BC6;&#x7801;&#x3002;&#x5F88;&#x65B9;&#x4FBF;&#x3002;</p>
+<h4 id="&#x8BBE;&#x7F6E;token&#x65B9;&#x6CD5;">&#x8BBE;&#x7F6E;token&#x65B9;&#x6CD5;</h4>
+<p>&#x4F4D;&#x4E8E;<code>github&#x4E2A;&#x4EBA;&#x8D26;&#x53F7;&#x8BBE;&#x7F6E;-&gt;&#x5F00;&#x53D1;&#x8005;&#x8BBE;&#x7F6E;-&gt;&#x4E2A;&#x4EBA;token</code>&#x3002;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;token&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x5177;&#x4F53;&#x7684;&#x6743;&#x9650;&#xFF0C;&#x521B;&#x5EFA;&#x6210;&#x529F;&#x65F6;&#x4E00;&#x5B9A;&#x8981;&#x590D;&#x5236;&#x5230;&#x672C;&#x5730;&#x54EA;&#x91CC;&#x4FDD;&#x5B58;&#xFF0C;&#x53EA;&#x4F1A;&#x8BA9;&#x4F60;&#x770B;&#x89C1;&#x4E00;&#x6B21;&#xFF0C;&#x5982;&#x679C;&#x5FD8;&#x8BB0;&#x7684;&#x8BDD;&#x5C31;&#x9700;&#x8981;&#x91CD;&#x65B0;&#x751F;&#x6210;&#xFF08;&#x5176;&#x5B9E;&#x4E22;&#x4E86;&#x4E5F;&#x4E0D;&#x7B97;&#x9EBB;&#x70E6;&#xFF09;&#x3002;
+<img src="https://s1.ax1x.com/2020/04/16/JklB2q.png" alt="&#x8BBE;&#x7F6E;token"></p>
+<h4 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h4>
+<p>token&#x5B57;&#x7B26;&#x4E32;&#x4E0D;&#x80FD;&#x5B58;&#x50A8;&#x5728;github&#x7684;repo&#x4E2D;&#xFF0C;&#x7ECF;&#x8FC7;&#x6D4B;&#x8BD5;&#xFF0C;&#x4E00;&#x65E6;&#x63D0;&#x4EA4;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x5305;&#x542B;&#x8FD9;&#x4E2A;token&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x90A3;&#x4E48;github&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x5220;&#x9664;&#x8FD9;&#x4E2A;token&#x3002;</p>
+<h3 id="&#x7528;token&#x901A;&#x8FC7;&#x6743;&#x9650;&#x8BA4;&#x8BC1;">&#x7528;token&#x901A;&#x8FC7;&#x6743;&#x9650;&#x8BA4;&#x8BC1;</h3>
+<p>&#x6709;&#x4E24;&#x79CD;&#x4F20;&#x9001;&#x65B9;&#x6CD5;&#xFF0C;&#x54EA;&#x79CD;&#x90FD;&#x53EF;&#x4EE5;&#xFF1A;</p>
+<ol>
+<li>&#x4F5C;&#x4E3A;url&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x660E;&#x6587;&#x4F20;&#x8F93;&#xFF1A;
+<code>curl https://api.github.com/?access_token=OAUTH-TOKEN</code></li>
+<li>&#x4F5C;&#x4E3A;header&#x4E2D;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x8F93;&#xFF1A;
+<code>curl -H &quot;Authorization: token OAUTH-TOKEN&quot; https://api.github.com</code></li>
+</ol>
+<p>&#x5982;&#x679C;&#x4E0D;&#x662F;&#x7528;curl&#x800C;&#x662F;Insomnia&#x6D4B;&#x8BD5;&#x7684;&#x8BDD;&#xFF0C;&#x548C;&#x4E0A;&#x9762;basic auth&#x662F;&#x5927;&#x540C;&#x5C0F;&#x5F02;&#x7684;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x64CD;&#x4F5C;&#x5C31;&#x4E0D;&#x590D;&#x8FF0;&#x4E86;&#x3002;</p>
+<h2 id="&#x8BA4;&#x8BC1;&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;oauth2-keysecret">&#x8BA4;&#x8BC1;&#x65B9;&#x6CD5;&#x4E09;&#xFF1A;OAuth2 key/secret</h2>
+<p>&#x8FD9;&#x4E2A;&#x662F;&#x9664;&#x4E86;Personal Access Token&#x4E4B;&#x5916;&#x7684;&#x53E6;&#x4E00;&#x79CD;&#x597D;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5373;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684;OAuth app&#xFF0C;&#x7136;&#x540E;&#x5F97;&#x5230;&#x4E00;&#x5BF9;client_id&#x548C;client_secret&#x3002;</p>
+<p> <img src="https://s1.ax1x.com/2020/04/16/JklYqS.png" alt=""></p>
+<p> <img src="https://s1.ax1x.com/2020/04/16/JklNVg.png" alt=""></p>
+<p>&#x5F97;&#x5230;&#x8FD9;&#x4E24;&#x4E2A;&#x503C;&#x4E4B;&#x540E;&#xFF0C;&#x76F4;&#x63A5;&#x5728;&#x8BBF;&#x95EE;&#x4EFB;&#x4F55;api&#x7684;url&#x8FDE;&#x63A5;&#x540E;&#x9762;&#x663E;&#x6027;&#x52A0;&#x4E0A;&#x8FD9;&#x4E24;&#x4E2A;&#x53C2;&#x6570;&#x5373;&#x53EF;&#x5B8C;&#x6210;&#x8BA4;&#x8BC1;&#xFF0C;&#x5982;&#xFF1A;
+<code>https://api.github.com/users/yourusername?client_id=YOUR-CLIENT-ID&amp;client_secret=YOUR-CLIENT-SECRET</code></p>
+<p>&#x4F46;&#x662F;,&#x76EE;&#x524D;&#x8FD9;&#x79CD;&#x8BA4;&#x8BC1;&#x65B9;&#x5F0F;<strong>&#x4E0D;&#x652F;&#x6301;&#x67E5;&#x8BE2;&#x4EE5;&#x5916;&#x7684;&#x64CD;&#x4F5C;</strong>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x53EA;&#x80FD;GET&#x83B7;&#x53D6;&#x67D0;&#x4E9B;api&#x4FE1;&#x606F;&#xFF0C;&#x4E0D;&#x80FD;&#x6267;&#x884C;request&#x91CC;&#x7684;&#x4EFB;&#x4F55;PUT/PATCH/DELETE&#x64CD;&#x4F5C;&#x3002;</p>
 
                                 
                                 </section>
@@ -313,7 +339,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"获取权限","level":"1.4.1","depth":2,"next":{"title":"写在最后","level":"1.5","depth":1,"path":"end.md","ref":"end.md","articles":[]},"previous":{"title":"需权限部分","level":"1.4","depth":1,"ref":"","articles":[{"title":"获取权限","level":"1.4.1","depth":2,"path":"s1.md","ref":"s1.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"s1.md","mtime":"2020-04-02T09:19:32.810Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-02T10:46:47.706Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"获取权限","level":"1.4.1","depth":2,"next":{"title":"写在最后","level":"1.5","depth":1,"path":"end.md","ref":"end.md","articles":[]},"previous":{"title":"需权限部分","level":"1.4","depth":1,"ref":"","articles":[{"title":"获取权限","level":"1.4.1","depth":2,"path":"s1.md","ref":"s1.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"s1.md","mtime":"2020-04-16T06:47:13.077Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-16T06:47:34.737Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
