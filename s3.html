@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>组织 · GitBook</title>
+        <title>issues · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,8 +57,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
+    <link rel="next" href="s4.html" />
     
-    <link rel="prev" href="f2.html" />
+    
+    <link rel="prev" href="s2.html" />
     
 
     </head>
@@ -153,7 +155,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.3" data-path="f3.html">
+        <li class="chapter " data-level="1.3.3" data-path="f3.html">
             
                 <a href="f3.html">
             
@@ -211,7 +213,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4.3" data-path="s3.html">
+        <li class="chapter active" data-level="1.4.3" data-path="s3.html">
             
                 <a href="s3.html">
             
@@ -285,7 +287,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >组织</a>
+        <a href="." >issues</a>
     </h1>
 </div>
 
@@ -300,7 +302,51 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8BBF;&#x95EE;&#x7EC4;&#x7EC7;">&#x8BBF;&#x95EE;&#x7EC4;&#x7EC7;</h1>
+                                <h1 id="issues&#x95EE;&#x9898;&#x7BA1;&#x7406;">issues&#x95EE;&#x9898;&#x7BA1;&#x7406;</h1>
+<h2 id="&#x589E;&#x52A0;&#x4E00;&#x6761;issue">&#x589E;&#x52A0;&#x4E00;&#x6761;issue</h2>
+<ul>
+<li>&#x4F20;&#x8F93;&#x65B9;&#x6CD5;&#xFF1A;POST </li>
+<li>&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;&#xFF1A;<code>https://api.github.com/repos/&#x7528;&#x6237;&#x540D;/&#x4ED3;&#x5E93;&#x540D;/issues</code> </li>
+<li>JSON&#x683C;&#x5F0F;&#xFF1A;&#x793A;&#x4F8B;&#x5982;&#x4E0B;<pre><code class="lang-JSON">{ 
+  <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Creating issue from API&quot;</span>, 
+  <span class="hljs-string">&quot;body&quot;</span>: <span class="hljs-string">&quot;Posting a issue from Insomnia&quot;</span>
+}
+</code></pre>
+</li>
+<li>&#x6CE8;&#x610F;&#xFF1A;issue&#x7684;&#x6570;&#x636E;&#x91CC;&#x9762;&#x662F;&#x53EF;&#x4EE5;&#x52A0;label&#xFF0C;milestone&#x548C;assignees&#x7684;&#x3002;&#x4F46;&#x662F;&#x5FC5;&#x987B;&#x6CE8;&#x610F;milestone&#x548C;assignees&#x5FC5;&#x987B;&#x662F;&#x5DF2;&#x6709;&#x7684;&#x540D;&#x6B21;&#x5B8C;&#x5168;&#x5BF9;&#x5E94;&#x624D;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x65E0;&#x6CD5;&#x5B8C;&#x6210;&#x521B;&#x5EFA;&#x3002;</li>
+</ul>
+<h2 id="&#x66F4;&#x6539;&#x67D0;&#x6761;issue">&#x66F4;&#x6539;&#x67D0;&#x6761;issue</h2>
+<ul>
+<li>&#x4F20;&#x8F93;&#x65B9;&#x6CD5;&#xFF1A;PATCH </li>
+<li>&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;&#xFF1A;<code>https://api.github.com/repos/&#x7528;&#x6237;&#x540D;/&#x4ED3;&#x5E93;&#x540D;/issues/&#x5E8F;&#x53F7;</code> </li>
+<li>JSON&#x683C;&#x5F0F;&#xFF1A;&#x793A;&#x4F8B;&#x5982;&#x4E0B;<pre><code class="lang-JSON">{ 
+  <span class="hljs-string">&quot;title&quot;</span>: <span class="hljs-string">&quot;Creating issue from API ---updated&quot;</span>, 
+  <span class="hljs-string">&quot;body&quot;</span>: <span class="hljs-string">&quot;Posting a issue from Insomnia \n\n Updated from insomnia.&quot;</span>, 
+  <span class="hljs-string">&quot;state&quot;</span>: <span class="hljs-string">&quot;open&quot;</span>
+}
+</code></pre>
+</li>
+<li>&#x6CE8;&#x610F;&#xFF1A;&#x5982;&#x679C;JSON&#x4E2D;&#x52A0;&#x5165;&#x7A7A;&#x767D;&#x7684;labels&#x6216;assignees&#xFF0C;&#x5982;&quot;labels&quot;: []&#xFF0C;&#x4F5C;&#x7528;&#x5C31;&#x662F;&#x6E05;&#x7A7A;&#x6240;&#x6709;&#x7684;&#x6807;&#x7B7E;&#x548C;&#x76F8;&#x5173;&#x4EBA;&#x3002;</li>
+</ul>
+<h2 id="&#x9501;&#x4F4F;&#x67D0;&#x6761;issue">&#x9501;&#x4F4F;&#x67D0;&#x6761;issue</h2>
+<p>&#x5373;&#x4E0D;&#x5141;&#x8BB8;&#x522B;&#x4EBA;&#x8BC4;&#x8BBA;&#xFF08;&#x81EA;&#x5DF1;&#x53EF;&#x4EE5;&#xFF09;</p>
+<ul>
+<li>&#x4F20;&#x8F93;&#x65B9;&#x6CD5;&#xFF1A;PUT </li>
+<li>&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;&#xFF1A;<code>https://api.github.com/repos/&#x7528;&#x6237;&#x540D;/&#x4ED3;&#x5E93;&#x540D;/issues/&#x5E8F;&#x53F7;/lock</code> </li>
+<li>JSON&#x683C;&#x5F0F;&#xFF1A;&#x793A;&#x4F8B;&#x5982;&#x4E0B;<pre><code class="lang-JSON">{ 
+  <span class="hljs-string">&quot;locked&quot;</span>: <span class="hljs-literal">true</span>, 
+  <span class="hljs-string">&quot;active_lock_reason&quot;</span>: <span class="hljs-string">&quot;too heated&quot;</span>
+}
+</code></pre>
+</li>
+<li>&#x6CE8;&#x610F;&#xFF1A;active_lock_reason&#x53EA;&#x80FD;&#x6709;4&#x79CD;&#x503C;&#x53EF;&#x9009;&#xFF1A;off-topic, too heated, resolved, spam&#x3002;</li>
+</ul>
+<h2 id="&#x89E3;&#x9501;&#x67D0;&#x6761;issue">&#x89E3;&#x9501;&#x67D0;&#x6761;issue</h2>
+<ul>
+<li>&#x4F20;&#x8F93;&#x65B9;&#x6CD5;&#xFF1A;DELETE</li>
+<li>&#x8BBF;&#x95EE;&#x8DEF;&#x5F84;&#xFF1A;<code>https://api.github.com/repos/&#x7528;&#x6237;&#x540D;/&#x4ED3;&#x5E93;&#x540D;/issues/&#x5E8F;&#x53F7;/lock</code> </li>
+<li>&#x65E0;JSON&#x4F20;&#x8F93;</li>
+</ul>
 
                                 
                                 </section>
@@ -328,10 +374,14 @@
 
             
                 
-                <a href="f2.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 仓库">
+                <a href="s2.html" class="navigation navigation-prev " aria-label="Previous page: contents">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
+                
+                <a href="s4.html" class="navigation navigation-next " aria-label="Next page: comments">
+                    <i class="fa fa-angle-right"></i>
+                </a>
                 
             
         
@@ -340,7 +390,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"组织","level":"1.3.3","depth":2,"next":{"title":"需权限部分","level":"1.4","depth":1,"ref":"","articles":[{"title":"获取权限","level":"1.4.1","depth":2,"path":"s1.md","ref":"s1.md","articles":[]},{"title":"contents","level":"1.4.2","depth":2,"path":"s2.md","ref":"s2.md","articles":[]},{"title":"issues","level":"1.4.3","depth":2,"path":"s3.md","ref":"s3.md","articles":[]},{"title":"comments","level":"1.4.4","depth":2,"path":"s4.md","ref":"s4.md","articles":[]}]},"previous":{"title":"仓库","level":"1.3.2","depth":2,"path":"f2.md","ref":"f2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"f3.md","mtime":"2020-04-02T10:02:03.779Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-07T11:12:13.000Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"issues","level":"1.4.3","depth":2,"next":{"title":"comments","level":"1.4.4","depth":2,"path":"s4.md","ref":"s4.md","articles":[]},"previous":{"title":"contents","level":"1.4.2","depth":2,"path":"s2.md","ref":"s2.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"s3.md","mtime":"2020-05-07T11:07:09.086Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-07T11:12:13.000Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
